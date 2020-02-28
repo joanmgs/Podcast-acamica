@@ -1,0 +1,172 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* ------ PRIMERA SECCIÓN: Menú ------  */
+
+.boxtop{
+    position: relative;
+    background-color: #FFFFFF; 
+    width: 320px;
+    height: 44px;
+    margin-bottom: 36px;
+}
+
+.iconbd{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    top: 10px;
+}
+
+/* -- Caja chechkbox escondida -- */
+
+.check-ham{
+    display: none;
+}
+
+.boxtop .check-ham:checked + .menu-ham{
+    visibility: visible;
+} 
+/*¿Cómo se hace para que cuando presione la hamburguesa
+la equis aparezca y la hamburguesa desaparezca?*/
+
+/* -- Hamburguesa -- */
+
+.hamburguesa{
+    position: absolute;
+    left: 283px;
+    top: 16px;
+}
+
+    .hamburguesa > div{
+        width: 18px;
+        height: 2px;
+        background-color: black;    
+    }
+
+    div.linea2{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+        /* .ham{
+            position: absolute;
+            width: 18px;
+            height: 2px;
+            left: 283px;
+            /* top: 16px;
+            right: 19px;
+            top: 16px;
+            bottom: 16px; 
+            left: 283px; */
+            /* margin: 16px 19px 16px 283px;
+        } Para el ícono de la hamburguesa*/
+
+/* -- diseño de la X
+    .equis{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 14px;
+        height: 14px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .equis i{
+            transform: scale(1.3,1.3);
+            display: none;
+            z-index: 3;
+        } */
+
+/* -- Barra de navegación -- */
+
+.menu-ham{ /* Menú azul que se esconde */
+    position: absolute;
+    width: 320px;
+    height: 224px;
+    background-color: #0000EC;
+    color: #FFFFFF;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-top: 44px;    
+    visibility: hidden;
+    z-index: 10;
+}
+    .menu-ham ul{        
+        list-style: none; /*elimina las viñetas del a lista*/
+        margin-left: 16px;       
+    }
+    .menu-ham ul li{        
+        color: #FFFFFF;
+        width: 106px;
+        height: 28px;
+        font-family: 'IBM Plex Mono', monospace;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+        .menu-ham ul li:nth-child(1){
+            margin-top: 16px;
+        }
+        .menu-ham ul li:hover{
+            color: #00F3BB;
+            text-decoration: line-through;
+        }
+        .menu-ham ul li:active{
+            color: grey;
+            text-decoration: line-through;
+        }
+
+/* ------ SEGUNDA SECCIÓN: holapunto ------ */
+
+.holapunto{
+    width: 320px;
+    height: 303px;
+    background-color: #FFFFFF;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+    .hello{        
+        font-size: 36px;
+    }
+    .world{
+        text-decoration: line-through;
+    }
+    .parr1{
+        font-size: 14px;
+        font-family: 'IBM Plex Mono', monospace;
+        margin-top: 16px;
+        margin-bottom: 36px;        
+        line-height: 22px;
+        width: 288px;
+        height: 66px;
+    }
+    .conmas{
+        width: 288px;
+        height: 48px;
+        background: #00F3BB;
+        color: #060A24;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .conmas .conoce-mas{
+            font-size: 16px;
+            font-family: 'IBM Plex Mono', monospace;                        
+            /* -- ¿Cómo aplicar el estilo medium? -- */
+        }        
+        .conmas:hover{
+            background: linear-gradient(to left, #0000FE, #00F0B8);
+            color: #FFFFFF;
+        }            
+
+/* ------ TERCERA SECCIÓN: Episodios ------ */
