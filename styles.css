@@ -178,7 +178,7 @@ la equis aparezca y la hamburguesa desaparezca?*/
 
 
 /* ------ MEDIA QUERY: Todas las pantallas ------ */
-
+/* Comprobando cambios */
 @media (min-width: 321px){
     body, header{
         width: 100%;
