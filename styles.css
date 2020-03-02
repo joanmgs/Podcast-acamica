@@ -175,6 +175,17 @@ la equis aparezca y la hamburguesa desaparezca?*/
 
 /* ------ TERCERA SECCIÓN: Episodios ------ */
 
+.sec-ep{
+    position: relative;
+    width: 320px;
+    height: 1293.5px;
+    margin-top: 347px;
+    background-image: linear-gradient(225deg, #0000FF, #0000A3);
+}
+    .podcast{
+        width: 298px;
+        height: 225px;
+    }
 
 /* ------ MEDIA QUERY: Todas las pantallas ------ */
 
