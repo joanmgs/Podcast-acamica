@@ -5,8 +5,6 @@
     border: 0;
 }
 
-
-
 /* ------ PRIMERA SECCIÓN: Menú ------  */
 
 .boxtop{
@@ -129,6 +127,7 @@ la equis aparezca y la hamburguesa desaparezca?*/
 
 .holapunto{        
     height: 303px;
+    width: 100%;
     background-color: #FFFFFF;
     position: absolute;
     display: flex;
