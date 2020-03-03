@@ -102,10 +102,14 @@ la equis aparezca y la hamburguesa desaparezca?*/
         list-style: none; /*elimina las viñetas del a lista*/
         margin-left: 16px;       
     }
+    .menu-ham a{
+        text-decoration: none;
+        font-family: 'IBM Plex Mono', monospace;
+        
+    }
     .menu-ham ul li{        
         color: #FFFFFF;
         height: 28px;
-        font-family: 'IBM Plex Mono', monospace;
         margin-top: 24px;
         display: flex;
         align-items: center;
@@ -182,6 +186,9 @@ la equis aparezca y la hamburguesa desaparezca?*/
     margin-top: 347px;
     background-image: linear-gradient(225deg, #0000FF, #0000A3);
 }
+    .screen{
+        visibility: hidden;
+    }
     .podcast{
         width: 298px;
         height: 225px;
@@ -190,10 +197,10 @@ la equis aparezca y la hamburguesa desaparezca?*/
 /* ------ MEDIA QUERY: Todas las pantallas ------ */
 
 @media (min-width: 350px){
-    body, header{
+    /* body, header{
         width: 100%;
         height: 100vh;
-    }
+    } */
     /* Aún no estoy seguro si es necesaria esta parte */
 
     /* ------ PRIMERA SECCIÓN: Menú ------  */
@@ -316,6 +323,32 @@ la equis aparezca y la hamburguesa desaparezca?*/
             }        
             
     /* ------ TERCERA SECCIÓN: Episodios ------ */
-    
-    
+
+    .sec-ep{
+        height: 1042.6px;
+        margin-top: 449px;
+        background-image: linear-gradient(225deg, #0000FF, #0000A3);
+    }
+        .screen{
+            visibility: visible;
+            position: absolute;
+        }
+        .mobile{
+            display: none;
+        }
+        .podcast{
+            width: 298px;
+            height: 225px;
+        }
+        .titulo-ep{
+            position: absolute;
+            width: 209px;
+            height: 62px;
+            color: #FFFFFF;
+            font-size: 48px;
+            margin-top: 186px;
+            margin-left: 200px;
+            margin-bottom: 26px;
+        }
+
     }
