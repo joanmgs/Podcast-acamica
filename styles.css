@@ -12,7 +12,6 @@
     background-color: #FFFFFF; 
     width: 100%;
     height: 44px;
-    margin-bottom: 29px;
 }
 
 .iconbd{
@@ -141,13 +140,14 @@ la equis aparezca y la hamburguesa desaparezca?*/
     height: 303px;
     width: 100%;
     background-color: #FFFFFF;
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    margin-left: 16px;
+    flex-direction: column;    
 }
     .hello{        
         font-size: 36px;
+        margin-left: 16px;
+        margin-top: 29px;
     }
     .world{
         text-decoration: line-through;
@@ -158,6 +158,7 @@ la equis aparezca y la hamburguesa desaparezca?*/
         white-space: pre;
     }
     .parr1{
+        margin-left: 16px;
         font-size: 14px;
         font-family: 'IBM Plex Mono', monospace;
         margin-top: 16px;
@@ -167,6 +168,7 @@ la equis aparezca y la hamburguesa desaparezca?*/
         height: 66px;
     }
     .conmas{
+        margin-left: 16px;
         width: 288px;
         height: 48px;
         background: #00F3BB;
@@ -188,23 +190,34 @@ la equis aparezca y la hamburguesa desaparezca?*/
 /* ------ TERCERA SECCIÓN: Episodios ------ */
 
 .sec-ep{
-    position: relative;
     width: 100%;
     height: 1293.5px;
-    margin-top: 347px;
     background-image: linear-gradient(225deg, #0000FF, #0000A3);
+    display: flex;
+    flex-direction: column;
 }
+    .titulo-ep{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 48px;
+    }
+    .mobile{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+        .podcast{
+            width: 298px;
+            height: 225px;
+        }
     .screen{
+        position: absolute;
         visibility: hidden;
     }
-    .podcast{
-        width: 298px;
-        height: 225px;
-    }
-
 /* ------ MEDIA QUERY: Todas las pantallas ------ */
 
-@media (min-width: 350px){
+@media (min-width: 720px){
     /* body, header{
         width: 100%;
         height: 100vh;
