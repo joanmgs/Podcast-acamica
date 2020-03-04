@@ -32,6 +32,13 @@
 .boxtop .check-ham:checked + .menu-ham{
     visibility: visible;
 } 
+.boxtop .check-ham:checked + .hamburguesa{
+    visibility: hidden;
+} 
+.boxtop .check-ham:checked + .equis{
+    visibility: visible;
+} 
+
 /*¿Cómo se hace para que cuando presione la hamburguesa
 la equis aparezca y la hamburguesa desaparezca?*/
 
@@ -67,7 +74,7 @@ la equis aparezca y la hamburguesa desaparezca?*/
             /* margin: 16px 19px 16px 283px;
         } Para el ícono de la hamburguesa*/
 
-/* -- diseño de la X
+/* -- diseño de la X */
     .equis{
         position: absolute;
         right: 20px;
@@ -81,9 +88,9 @@ la equis aparezca y la hamburguesa desaparezca?*/
     }
         .equis i{
             transform: scale(1.3,1.3);
-            display: none;
+            visibility: hidden;
             z-index: 3;
-        } */
+        }
 
 /* -- Barra de navegación -- */
 
@@ -105,10 +112,9 @@ la equis aparezca y la hamburguesa desaparezca?*/
     .menu-ham a{
         text-decoration: none;
         font-family: 'IBM Plex Mono', monospace;
-        
+        color: #FFFFFF;
     }
     .menu-ham ul li{        
-        color: #FFFFFF;
         height: 28px;
         margin-top: 24px;
         display: flex;
@@ -118,12 +124,12 @@ la equis aparezca y la hamburguesa desaparezca?*/
         .menu-ham ul li:nth-child(1){
             margin-top: 16px;
         }
-        .menu-ham ul li:hover{
+        .menu-ham ul li a:hover{
             color: #00F3BB;
             text-decoration: line-through;
         }
-        .menu-ham ul li:active{
-            color: grey;
+        .menu-ham ul li a:active{
+            color: #8F060A24;
             text-decoration: line-through;
         }
 
