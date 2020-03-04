@@ -28,16 +28,16 @@
 .check-ham{
     display: none;
 }
-
 .boxtop .check-ham:checked + .menu-ham{
     visibility: visible;
 } 
-.boxtop .check-ham:checked + .hamburguesa{
-    visibility: hidden;
+/* .boxtop .check-ham:checked + .hamburguesa{
+    display: none;
 } 
 .boxtop .check-ham:checked + .equis{
     visibility: visible;
-} 
+    z-index: 5;
+}  */
 
 /*¿Cómo se hace para que cuando presione la hamburguesa
 la equis aparezca y la hamburguesa desaparezca?*/
@@ -48,6 +48,8 @@ la equis aparezca y la hamburguesa desaparezca?*/
     position: absolute;
     left: 283px;
     top: 16px;
+    
+    z-index: 4;
 }
 
     .hamburguesa > div{
@@ -84,12 +86,12 @@ la equis aparezca y la hamburguesa desaparezca?*/
         background-color: #FFFFFF;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;        
+        z-index: 3;
     }
         .equis i{
             transform: scale(1.3,1.3);
-            visibility: hidden;
-            z-index: 3;
+            visibility: hidden;            
         }
 
 /* -- Barra de navegación -- */
@@ -214,7 +216,6 @@ la equis aparezca y la hamburguesa desaparezca?*/
     .boxtop{
         width: 100%;
         height: 80px;
-        
         z-index: 1;
     }
     .iconbd{
@@ -246,7 +247,6 @@ la equis aparezca y la hamburguesa desaparezca?*/
     }
         .menu-ham ul{        
             position: absolute;
-            list-style: none; /*elimina las viñetas del a lista*/
             margin-left: 0px;  
             margin-top: 0px;
             width: 100%;
@@ -254,24 +254,24 @@ la equis aparezca y la hamburguesa desaparezca?*/
             display: flex;
             justify-content: flex-end;
         }
-        .menu-ham ul li{        
-            color: #060A24 ;            
-            height: 28px;
+        .menu-ham a{
+            color: #060A24;
+        }
+        .menu-ham ul li{                    
             margin-top: 26px;            
             margin-right: 48px;            
-        }
-            
+        }            
             .menu-ham ul li:nth-child(1){
                 margin-top: 26px;
             }
             .menu-ham ul li:nth-child(4){
                 margin-right: 100px;
             }
-            .menu-ham ul li:hover{
+            .menu-ham ul li a:hover{
                 color: #00F3BB;
                 text-decoration: line-through;
             }
-            .menu-ham ul li:active{
+            .menu-ham ul li a:active{
                 color: grey;
                 text-decoration: line-through;
             }
