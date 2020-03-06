@@ -15,15 +15,22 @@
         margin-left: 16px;        
     }
     .mobile{        
+        width: 100%;
         display: flex;
         flex-direction: column;
-        margin-left: 11px;
+        margin-left: 11px;        
     }
+        .mobile img{
+            width: 298px;
+            margin-top: 11px;
+        }
+        .mobile img:nth-child(1){
+            margin-top: 21px;
+        }
+    
     .screen{        
         display: none;
     }
-        
-    
 
 /* ------ MEDIA QUERY ------ */
 
@@ -42,12 +49,15 @@
         }
         .screen{
             display: grid;
-            grid-template-columns: 7% auto 72px auto 7%;
-            grid-template-rows: 26px 232px 72px 232.6px;            
+            grid-template-columns: 7% auto 5% auto 7%;
+            grid-template-rows: 26px 232px 72px 232.6px;                        
         }                   
+            .screen img{
+                justify-self: center;
+            }        
             .podcast1{
                 grid-column: 2;
-                grid-row: 2;
+                grid-row: 2;                
             }
             .podcast2{
                 grid-column: 4;
