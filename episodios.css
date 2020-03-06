@@ -6,53 +6,60 @@
     background-image: linear-gradient(225deg, #0000FF, #0000A3);
     display: flex;
     flex-direction: column;
+    clip-path: polygon(0% 3.5%, 100% 0%, 100% 97.5%, 0% 100%);
 }
-    .titulo-ep{
-        position: absolute;
+    .titulo-ep{        
         color: #FFFFFF;
-        font-size: 48px;
+        font-size: 36px;
+        margin-top: 64px;
+        margin-left: 16px;        
     }
-    .mobile{
-        position: absolute;
+    .mobile{        
         display: flex;
         flex-direction: column;
-        margin-left: 30px;
+        margin-left: 11px;
     }
-        .podcast{
-            width: 298px;
-            height: 225px;
-        }
-        .screen{
-            position: absolute;
-            visibility: hidden;
-        }
+    .screen{        
+        display: none;
+    }
+        
+    
 
 /* ------ MEDIA QUERY ------ */
 
 @media (min-width: 350px){
-    .sec-ep{
+    .sec-ep{        
         height: 1042.6px;
-        background-image: linear-gradient(225deg, #0000FF, #0000A3);
+        clip-path: polygon(0% 120px, 100% 0%, 100% 89.5%, 0% 100%);
     }
-        .screen{
-            visibility: visible;
-            position: absolute;
+        .titulo-ep{            
+            font-size: 48px;
+            margin-top: 186px;
+            margin-left: 200px;
         }
         .mobile{
             display: none;
         }
-        .podcast{
-            width: 298px;
-            height: 225px;
-        }
-        .titulo-ep{
-            position: absolute;
-            width: 209px;
-            height: 62px;
-            color: #FFFFFF;
-            font-size: 48px;
-            margin-top: 186px;
-            margin-left: 200px;
-            margin-bottom: 26px;
-        }
+        .screen{
+            display: grid;
+            grid-template-columns: 7% auto 72px auto 7%;
+            grid-template-rows: 26px 232px 72px 232.6px;            
+        }                   
+            .podcast1{
+                grid-column: 2;
+                grid-row: 2;
+            }
+            .podcast2{
+                grid-column: 4;
+                grid-row: 2;
+            }
+            .podcast3{
+                grid-column: 2;
+                grid-row: 4;
+            }
+            .podcast4{
+                grid-column: 4;
+                grid-row: 4;
+            }
+        
 }
