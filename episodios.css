@@ -1,0 +1,58 @@
+/* ------ TERCERA SECCIÓN: Episodios ------ */
+
+.sec-ep{
+    width: 100%;
+    height: 1293.5px;
+    background-image: linear-gradient(225deg, #0000FF, #0000A3);
+    display: flex;
+    flex-direction: column;
+}
+    .titulo-ep{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 48px;
+    }
+    .mobile{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+        .podcast{
+            width: 298px;
+            height: 225px;
+        }
+        .screen{
+            position: absolute;
+            visibility: hidden;
+        }
+
+/* ------ MEDIA QUERY ------ */
+
+@media (min-width: 350px){
+    .sec-ep{
+        height: 1042.6px;
+        background-image: linear-gradient(225deg, #0000FF, #0000A3);
+    }
+        .screen{
+            visibility: visible;
+            position: absolute;
+        }
+        .mobile{
+            display: none;
+        }
+        .podcast{
+            width: 298px;
+            height: 225px;
+        }
+        .titulo-ep{
+            position: absolute;
+            width: 209px;
+            height: 62px;
+            color: #FFFFFF;
+            font-size: 48px;
+            margin-top: 186px;
+            margin-left: 200px;
+            margin-bottom: 26px;
+        }
+}

@@ -1,0 +1,173 @@
+/* ------ PRIMERA SECCIÓN: Menú ------  */
+
+.boxtop{
+    position: relative;
+    background-color: #FFFFFF; 
+    width: 100%;
+    height: 44px;
+}
+    .iconbd{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 16px;
+        top: 10px;
+    }
+
+/* -- Caja chechkbox escondida -- */
+
+.check-ham{
+    display: none;
+}
+.boxtop .check-ham:checked + .menu-ham{
+    visibility: visible;
+} 
+
+/* -- Hamburguesa -- */
+
+.hamburguesa{
+    position: absolute;
+    left: 283px;
+    top: 16px;    
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .hamburguesa div{
+        width: 18px;
+        height: 2px;
+        background-color: black;           
+    }
+    div.linea2{
+        margin-top: 3px;
+        margin-bottom: 3px;        
+    }
+
+/* -- diseño de la X */
+    /* .equis{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 14px;
+        height: 14px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        z-index: 3;
+    }
+        .equis i{
+            transform: scale(1.3,1.3);
+            visibility: hidden;            
+        } */
+
+/* -- Barra de navegación -- */
+
+.menu-ham{ /* Menú azul que se esconde */
+    position: absolute;
+    width: 320px;
+    height: 224px;
+    background-color: #0000EC;
+    color: #FFFFFF;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-top: 44px;    
+    visibility: hidden;
+    z-index: 10;
+}
+    .menu-ham ul{        
+        list-style: none; /*elimina las viñetas del a lista*/
+        margin-left: 16px;       
+    }
+    .menu-ham a{
+        text-decoration: none;
+        font-family: 'IBM Plex Mono', monospace;
+        color: #FFFFFF;
+    }
+    .menu-ham ul li{        
+        height: 28px;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+        .menu-ham ul li:nth-child(1){
+            margin-top: 16px;
+        }
+        .menu-ham ul li a:hover{
+            color: #00F3BB;
+            text-decoration: line-through;
+        }
+        .menu-ham ul li a:active{
+            color: #8F060A24;
+            text-decoration: line-through;
+        }
+
+/* ------ MEDIA QUERY ------ */
+
+@media (min-width: 350px){
+
+/* ------ PRIMERA SECCIÓN: Menú ------  */
+
+.boxtop{
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+    .iconbd{
+        width: 36px;
+        height: 36px;
+        left: 100px;
+        top: 22px;
+        z-index: 9;
+    }
+
+/* -- Hamburguesa -- */
+
+.hamburguesa{ /* Hamburguesa desaparece */
+    display: none;
+}
+
+/* -- Barra de navegación -- */
+
+.menu-ham{ /* Menú azul que se esconde */        
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    color: #060A24;
+    margin-top: 0px;    
+    visibility: visible;
+    z-index: 8;
+}
+    .menu-ham ul{        
+        position: absolute;
+        margin-left: 0px;  
+        margin-top: 0px;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu-ham a{
+        color: #060A24;
+    }
+    .menu-ham ul li{                    
+        margin-top: 26px;            
+        margin-right: 48px;            
+    }            
+        .menu-ham ul li:nth-child(1){
+            margin-top: 26px;
+        }
+        .menu-ham ul li:nth-child(4){
+            margin-right: 100px;
+        }
+        .menu-ham ul li a:hover{
+            color: #00F3BB;
+            text-decoration: line-through;
+        }
+        .menu-ham ul li a:active{
+            color: grey;
+            text-decoration: line-through;
+        }
+}
