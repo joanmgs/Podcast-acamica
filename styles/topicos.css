@@ -43,6 +43,15 @@
             margin-bottom: 49px;
         } 
         ¿POR QUÉ NO FUNCIONA? */
-       
-    
-    
+
+@media (min-width: 350px){
+    .topicos{
+        height: 426px;
+    }
+    .algunos{
+        justify-self: initial;
+    }
+    .cont-img-p{
+        flex-direction: row;
+    }
+}

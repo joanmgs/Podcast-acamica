@@ -19,4 +19,26 @@
             width: 320px;
             height: 243px;    
         }
-    
+
+@media (min-width: 350px){    
+    .inv{
+        font-size: 48px;
+        margin-bottom: 36px;
+        margin-left: 200px;
+    }    
+        .salto::after{
+            content: none;
+            white-space: normal;
+        }
+    .img-invitadas{
+        display: grid;
+        grid-template-columns: repeat(3,480px);
+        grid-template-rows: repeat(2,364px);
+    }
+        .img-invitadas > img{
+            width: auto;
+            max-width: 480px;
+            height: auto;
+            max-height: 364px;
+        }
+}

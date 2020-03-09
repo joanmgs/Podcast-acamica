@@ -37,5 +37,26 @@
         }
 
 @media (min-width: 350px){
-
+    .nosotros{
+        height: 555.4px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+        .donde{
+            font-size: 48px;
+            margin-left: 62.4px;
+            margin-bottom: 24px;
+        }
+            .venimos::after{
+                content: none;
+                white-space: none;
+            }
+        .parr2{
+            margin-left: 62.4px;
+            font-size: 16px;
+            line-height: 24px;
+            width: 464px;
+            height: 102px;
+        }
 }
