@@ -1,0 +1,48 @@
+.topicos{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;           
+    align-items: center;
+}
+    .algunos{        
+        font-size: 36px;
+        line-height: 42px;
+        margin-left: 16px;    
+        margin-top: 48px;   
+        width: 288px; 
+    }
+    .cont-img-p{
+        display: flex;
+        flex-direction: column;           
+        align-items: center;
+        margin-top: 37px;
+    }
+        .cont-img-p > img{
+            width: 104px;
+            height: 104px;
+            margin-bottom: 13px;
+        }
+        .cont-img-p > p{            
+            margin-bottom: 65px;
+            font-size: 24px;   
+            font-weight: 600;
+            text-align: center;
+        }
+        .cont-img-p .cont-p-primero{
+            margin-bottom: 49px;
+        }
+        .cont-img-p .cont-p-ultimo{
+            margin-bottom: 42px;
+        }
+
+            /* .cont-img-p p:nth-child(1){
+                margin-top: 49px;
+            }
+        .cont-img-p p:nth-child(1){        
+            margin-bottom: 49px;
+        } 
+        ¿POR QUÉ NO FUNCIONA? */
+       
+    
+    

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./holapuntoazul.css"/>
     <link rel="stylesheet" href="./episodios.css"/>
     <link rel="stylesheet" href="./nosotros.css"/>
+    <link rel="stylesheet" href="./invitadas.css"/>
+    <link rel="stylesheet" href="./topicos.css"/>
+    <link rel="stylesheet" href="./novedades.css"/>
+    <link rel="stylesheet" href="./pie.css">
     
     <!-- Normalizador -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous"/>     
@@ -82,48 +86,59 @@
 
     <!-- NOSOTROS -->
     <section id="nosotros" class="nosotros">
-        <img src="./images/phone.png" alt="Celular con una página web abierta que titula The secret History of Women in Coding" class="celular"/>
+        <img src="./images/phone.png" alt="Celular con una página web abierta que titula The secret History of Women in Coding" class="celular"/>    
 
-        <p class="donde">De <span class="venimos">dónde</span>venimos</p>
-        <p class="parr2">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
-            Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>        
+        <div class="contenedor-nosotros">
+            <p class="donde">De <span class="venimos">dónde</span>venimos</p>
+            <p class="parr2">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+            </br>
+            <p class="parr2">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>        
+        </div>
     </section>
     
     <!-- INVITADAS -->
     <figure class="invitadas" id="invitadas">
-        <div>Invitadas estelares</div>
-        <img src="./images/grace-hopper.png" alt="Grace Hooper"/>
-        <img src="./images/Katie-Bouman.png" alt="Katie Bouman"/>
-        <img src="./images/Margaret_Hamilton.png" alt="Margaret-Hamilton"/>
-        <img src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Two girls with an E.R.A.Univac 1103 computer in the 50s"/>
-        <img src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Two girls operating with an Eniac computer - the world’s first programmable general-purpose computer"/>
-        <img src="./images/susan-kare.png" alt="Susan Kare"/>
+        <p class="inv"><span class="salto">Invitadas/os</span>estelares</p>
+        <div class="img-invitadas">
+            <img src="./images/grace-hopper.png" alt="Grace Hooper"/>
+            <img src="./images/Katie-Bouman.png" alt="Katie Bouman"/>
+            <img src="./images/Margaret_Hamilton.png" alt="Margaret-Hamilton"/>
+            <img src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Two girls with an E.R.A.Univac 1103 computer in the 50s"/>
+            <img src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Two girls operating with an Eniac computer - the world’s first programmable general-purpose computer"/>
+            <img src="./images/susan-kare.png" alt="Susan Kare"/>
+        </div>
     </figure>
 
     <!-- TEMAS -->
-    <section id="topicos">
-        <div>Algunos de nuestros temas</div>
-        <div><img src="./images/icon1.svg" alt="Tres documentos con flechas hacia un servidor"/> Trabajo remoto</div>
-        <div><img src="./images/icon2.svg" alt="Silueta de cabeza reemplazando cerebro con redes en círculo y que salen de ella por la parte trasera"/>Repensando la programación</div>
-        <div><img src="./images/icon3.svg" alt="Computador portátil que en su pantalla tiene código"/>Bases del código</div>
-        <div><img src="./images/icon4.svg" alt="Servidor dentro y rodeado de una red de puntos"/>Seguridad informática</div>
+    <section id="topicos" class="topicos">
+        <div class="algunos">Algunos <span class="salto">de</span> nuestros temas</div>
+        <div class="cont-img-p">
+            <img src="./images/icon1.svg" alt="Tres documentos con flechas hacia un servidor""/>
+            <p class="cont-p-primero">Trabajo remoto</p>
+            <img src="./images/icon2.svg" alt="Silueta de cabeza reemplazando cerebro con redes en círculo y que salen de ella por la parte trasera"/>
+            <p>Repensando <span class="salto">la</span> programación</p>
+            <img src="./images/icon3.svg" alt="Computador portátil que en su pantalla tiene código"/>
+            <p>Bases del código</p>
+            <img src="./images/icon4.svg" alt="Servidor dentro y rodeado de una red de puntos"/>
+            <p class="cont-p-ultimo">Seguridad informática</p>
+        </div>
     </section>
 
     <!-- NOVEDADES -->
     <section class="novedades">
-        <div></div>
-        <button></button>
+        <div class="titulo-ep2">¿Querés <span class="salto">las</span> <span class="salto">últimas</span>novedades?</div>
+        <button type="button" class="conmas"><a class="conoce-mas">ESCUCHÁ LOS EPISODIOS</a></button>
     </section>
 
     <!-- PIE -->
     <footer class="pie">
-        <div>© 2019— Hello blue pale dot</div>
+        <div class="copyright">© 2019— Hello blue pale dot</div>
         <div class="iconos">
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>            
+            <div><i class="fab fa-spotify"></i></div>
+            <div><i class="fab fa-instagram"></i></div>
+            <div><i class="fab fa-twitter"></i></div>
+            <div><i class="fab fa-facebook"></i></div>
+            <div><i class="fab fa-telegram"></i></div>
         </div>
     </footer>
     

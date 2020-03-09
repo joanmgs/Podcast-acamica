@@ -1,0 +1,22 @@
+.invitadas{
+    display: flex;
+    flex-direction: column;
+}
+    .inv{
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 14px;
+    }
+        .salto::after{
+            content: '\A';
+            white-space: pre;
+        }
+    .img-invitadas{
+        display: flex;
+        flex-direction: column;            
+    }
+        .img-invitadas > img{
+            width: 320px;
+            height: 243px;    
+        }
+    

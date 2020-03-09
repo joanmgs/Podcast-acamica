@@ -43,7 +43,8 @@
     }
         .conmas .conoce-mas{
             font-size: 16px;
-            font-family: 'IBM Plex Mono', monospace;                        
+            font-family: 'IBM Plex Mono', monospace;    
+            font-weight: 500;                    
             /* -- ¿Cómo aplicar el estilo medium? -- */
         }        
         .conmas:hover{

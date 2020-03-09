@@ -6,29 +6,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #060A24;
 }
-    .celular{     
-        width: 360px;
-        height: 519px;        
-    }
-    .donde{
-        margin-top: 27px;
-        margin-left: 16px;        
-        font-size: 36px;   
-        line-height: 42px;
-    }
-        .venimos::after{
-            content: '\A';
-            white-space: pre;
+.celular{     
+    width: 360px;
+    height: 519px;  
+    z-index: 11;      
+    margin-bottom: 26px;            
+}
+    .contenedor-nosotros{
+        display: flex;
+        flex-direction: column;        
+    }        
+        /* ¿CÓMO HACER PARA QUE SUBA Y QUEDE ENCIMA DEL ANTERIOR CONTENEDOR?*/
+        .donde{            
+            margin-left: 16px;
+            margin-bottom: 8px;        
+            font-size: 36px;   
+            line-height: 42px;
         }
-    .parr2{
-        margin-left: 16px;
-        font-size: 14px;
-        font-family: 'IBM Plex Mono', monospace;
-        margin-top: 8px;             
-        line-height: 22px;
-    }
+            .venimos::after{
+                content: '\A';
+                white-space: pre;
+            }
+        .parr2{
+            margin-left: 16px;            
+            font-size: 14px;
+            font-family: 'IBM Plex Mono', monospace;                      
+            line-height: 22px;
+
+        }
 
 @media (min-width: 350px){
 
