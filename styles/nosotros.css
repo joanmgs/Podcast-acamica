@@ -3,21 +3,25 @@
 .nosotros{
     height: 850.5px;
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
 }
 .celular{     
+    position: absolute;
+    top: -95.5px;
+    left: -10px;
     width: 360px;
     height: 519px;  
     z-index: 11;      
-    margin-bottom: 26px;            
+    /* margin-bottom: 26px;             */
 }
-    .contenedor-nosotros{
+    .contenedor-nosotros{        
+        margin-top: 450.5px;
         display: flex;
         flex-direction: column;        
-    }        
-        /* ¿CÓMO HACER PARA QUE SUBA Y QUEDE ENCIMA DEL ANTERIOR CONTENEDOR?*/
+    }                
         .donde{            
             margin-left: 16px;
             margin-bottom: 8px;        
@@ -39,24 +43,33 @@
 @media (min-width: 350px){
     .nosotros{
         height: 555.4px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-        .donde{
-            font-size: 48px;
-            margin-left: 62.4px;
-            margin-bottom: 24px;
+        display: flex;
+        flex-direction: row;        
+    }    
+        .celular{            
+            width: 457.6px;
+            height: 660px;            
         }
-            .venimos::after{
-                content: none;
-                white-space: none;
+        .contenedor-nosotros{            
+            margin-top: 0px;   
+            left: 0px;             
+        }
+            .donde{                             
+                margin-left: 0px;
+                margin-bottom: 0px;                
+                font-size: 48px;
+                left: 720px
             }
-        .parr2{
-            margin-left: 62.4px;
-            font-size: 16px;
-            line-height: 24px;
-            width: 464px;
-            height: 102px;
-        }
+                .venimos::after{
+                    content: none;
+                    white-space: none;
+                }
+            .parr2{
+                
+                margin-left: 0px;
+                font-size: 16px;
+                line-height: 24px;
+                width: 464px;
+                height: 102px;
+            }
 }
