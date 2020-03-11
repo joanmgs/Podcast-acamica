@@ -5,19 +5,19 @@
     width: 100%;
     position: relative;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
-.celular{     
-    position: absolute;
-    top: -95.5px;
-    left: -10px;
-    width: 360px;
-    height: 519px;  
-    z-index: 11;      
-    /* margin-bottom: 26px;             */
-}
+    .celular{         
+        position: absolute;
+        top: -95.5px;
+        left: -10px;
+        width: 360px;
+        height: 519px;  
+        z-index: 11;      
+        /* margin-bottom: 26px;             */
+    }
     .contenedor-nosotros{        
+        position: absolute;
         margin-top: 450.5px;
         display: flex;
         flex-direction: column;        
@@ -42,23 +42,25 @@
 
 @media (min-width: 350px){
     .nosotros{
-        height: 555.4px;
-        display: flex;
-        flex-direction: row;        
+        height: 555.4px;        
+        flex-direction: row;
+        justify-content: center;
     }    
         .celular{            
             width: 457.6px;
-            height: 660px;            
+            height: 660px;
+            
         }
-        .contenedor-nosotros{            
+        .contenedor-nosotros{
+            
             margin-top: 0px;   
-            left: 0px;             
+            
         }
             .donde{                             
                 margin-left: 0px;
                 margin-bottom: 0px;                
                 font-size: 48px;
-                left: 720px
+                left: 0px
             }
                 .venimos::after{
                     content: none;
