@@ -5,7 +5,9 @@
     .inv{
         font-size: 36px;
         line-height: 42px;
+        margin-top: 54px;
         margin-bottom: 14px;
+        margin-left: 16px;
     }
         .salto::after{
             content: '\A';
@@ -13,11 +15,11 @@
         }
     .img-invitadas{
         display: flex;
-        flex-direction: column;            
+        flex-direction: column;
     }
         .img-invitadas > img{
             width: 320px;
-            height: 243px;    
+            height: 243px;
         }
 
 @media (min-width: 350px){    
@@ -32,13 +34,11 @@
         }
     .img-invitadas{
         display: grid;
-        grid-template-columns: repeat(3,480px);
-        grid-template-rows: repeat(2,364px);
+        grid-template-columns: repeat(3, 33.3vw);
+        grid-template-rows: repeat(2,auto);
     }
         .img-invitadas > img{
-            width: auto;
-            max-width: 480px;
+            width: 100%;
             height: auto;
-            max-height: 364px;
         }
 }

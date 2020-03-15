@@ -16,37 +16,42 @@
         display: flex;
         flex-direction: column;           
         align-items: center;
-        margin-top: 37px;
+        margin-top: 24px;
     }
-        .cont-img-p > img{
-            width: 104px;
-            height: 104px;            
+        .cont-img-p div{
+            width: 100vw;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 52px;
         }
-        .cont-img-p > p{            
-            margin-bottom: 65px;
-            font-size: 24px;   
-            font-weight: 600;
-            text-align: center;
-        }
-        .cont-img-p .cont-p-primero{
-            margin-bottom: 49px;
-        }
-        .cont-img-p .cont-p-ultimo{
-            margin-bottom: 42px;
-        }
-            /* .cont-img-p p:nth-child(1){
-                margin-top: 49px;
+            .cont-img-p div:nth-child(1){
+                margin-bottom: 36px;
             }
-        .cont-img-p p:nth-child(1){        
-            margin-bottom: 49px;
-        } 
-        ¿POR QUÉ NO FUNCIONA? */
+            .cont-img-p div:nth-child(4){
+                margin-bottom: 42px;
+            }
+            .cont-img-p div p{
+                font-size: 24px;   
+                font-weight: 600;
+                text-align: center;
+            }
+        .cont-img-p img{
+            width: 104px;
+            height: 104px;
+            margin-bottom: 13px;
+        }
+        .cont-p-ultimo .salto::after{
+            content: none;
+            white-space: normal;
+        }
 
 @media (min-width: 350px){
     .topicos{
         height: 426px;
         display: flex;
-        align-items: flex-start;        
+        align-items: flex-start;
     }
         .algunos{
             font-size: 48px;
@@ -60,9 +65,11 @@
                 white-space: normal;
             }
         .cont-img-p{
-            flex-direction: row;  
-            margin-top: 69px;                                       
-        }            
+            align-self: center;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 69px;
+        }
             .cont-img-p > img{
                 width: 104px;
                 height: 104px;
@@ -73,6 +80,14 @@
                 font-size: 24px;   
                 font-weight: 600;
                 text-align: center;
+            }
+            .cont-img-p .reemplazar .salto::after{
+                content: '\A';
+                white-space: pre;
+            }
+            .cont-img-p .cont-p-ultimo .salto::after{
+                content: '\A';
+                white-space: pre;
             }
             .cont-img-p .cont-p-primero, .cont-img-p .cont-p-ultimo{
                 margin-bottom: 0px;
