@@ -65,12 +65,13 @@
                 white-space: normal;
             }
         .cont-img-p{
-            align-self: center;
+            width: 72.2vw;
             flex-direction: row;
-            justify-content: space-around;
-            margin-top: 69px;
+            align-items: baseline;
+            align-self: center;
+            margin-top: 56px;
         }
-            .cont-img-p > img{
+            .cont-img-p img{
                 width: 104px;
                 height: 104px;
                 margin-bottom: 29px;

@@ -6,15 +6,40 @@
     justify-content:center;
 }
     .copyright{
+        color: #060A24;
         font-size: 14px;
         line-height: 22px;
         font-family: 'IBM Plex Mono', monospace;
     }
-    .pie .iconos{        
-        width:230px;
+    .pie .iconos{
+        width: 230px;
+        margin-top: 16px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-top: 16px;
     }
+        i.fab{
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+@media (min-width: 350px){
+    .pie{
+        height: 95px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        .copyright{
+            margin-left: 7%;
+            font-size: 16px;
+            line-height: 28px;
+        }
+        .pie .iconos{
+            margin-top: 0px;
+            margin-right: 7%;
+        }
+            i.fab{
+                font-size: 18px;
+            }
+}
