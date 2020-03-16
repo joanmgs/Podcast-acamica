@@ -52,15 +52,16 @@
             margin-top: 0px;
             margin-left: 62.4px;
         }
-            .donde{                             
+            .donde{
+                margin-top: 20.4px;
                 margin-left: 0px;
-                margin-bottom: 0px;                
+                margin-bottom: 24px;                
                 font-size: 48px;
                 left: 0px
             }
                 .venimos::after{
                     content: none;
-                    white-space: none;
+                    white-space: normal;
                 }
             .parr2{
                 
