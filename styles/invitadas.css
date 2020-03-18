@@ -22,7 +22,7 @@
             height: 243px;
         }
 
-@media (min-width: 350px){    
+@media (min-width: 1280px){    
     .inv{
         font-size: 48px;
         margin-bottom: 36px;

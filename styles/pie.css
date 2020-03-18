@@ -34,7 +34,7 @@
             line-height: 28px;
         }
 
-@media (min-width: 350px){
+@media (min-width: 1280px){
     .pie{
         height: 95px;
         flex-direction: row;
