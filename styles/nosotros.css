@@ -1,7 +1,6 @@
 /* ------ CUARTA SECCIÓN: De donde venimos ------ */
 
 .nosotros{
-    height: auto;
     width: 100%;
     position: relative;
     display: flex;
@@ -9,14 +8,15 @@
 }
     .celular{
         position: relative;
-        top: -70px;
+        transform: translate(0px, -70px);
         align-self: center;
         height: 519px;
         z-index: 11;
     }
     .contenedor-nosotros{
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        transform: translate(0px, -50px);
     }                
         .donde{            
             margin-left: 16px;
@@ -46,11 +46,12 @@
         .celular{            
             width: 457.6px;
             height: 660px;
-            top: -110px;
+            transform: translate(0px, -100px);
         }
         .contenedor-nosotros{
             margin-top: 0px;
             margin-left: 62.4px;
+            transform: translate(0px, 0px);
         }
             .donde{
                 margin-top: 20.4px;

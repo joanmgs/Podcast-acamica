@@ -13,15 +13,6 @@
         top: 10px;
     }
 
-/* -- Caja chechkbox escondida -- */
-
-.check-ham{
-    display: none;
-}
-.boxtop .check-ham:checked + .menu-ham{
-    visibility: visible;
-} 
-
 /* -- Hamburguesa -- */
 
 .hamburguesa{
@@ -91,6 +82,9 @@
         align-items: center;
         justify-content: left;
     }
+    .menu-ham ul li a{
+        transition: 0.4s;
+    }
         .menu-ham ul li:nth-child(1){
             margin-top: 16px;
         }
@@ -102,6 +96,16 @@
             color: #8F060A24;
             text-decoration: line-through;
         }
+
+
+/* -- Caja chechkbox escondida -- */
+
+.check-ham{
+    display: none;
+}
+.boxtop .check-ham:checked + .menu-ham{
+    visibility: visible;
+} 
 
 /* ------ MEDIA QUERY ------ */
 
