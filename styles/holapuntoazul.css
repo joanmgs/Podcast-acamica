@@ -55,7 +55,7 @@
 
 /* ------ MEDIA QUERY ------ */
 
-    @media (min-width: 1280px){
+    @media (min-width: 350px){
         /* ------ SEGUNDA SECCIÓN: holapunto ------ */
     .holapunto{        
         height: 369px;                      
