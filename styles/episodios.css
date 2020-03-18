@@ -37,7 +37,7 @@
 
 /* ------ MEDIA QUERY ------ */
 
-@media (min-width: 350px){
+@media (min-width: 480px){
     .sec-ep{        
         height: 1042.6px;
         clip-path: polygon(0% 120px, 100% 0%, 100% 89.5%, 0% 100%);
