@@ -1,39 +1,37 @@
 /* ------ PRIMERA SECCIÓN: Menú ------  */
 
 .boxtop{
-    position: relative;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
     .iconbd{
-        position: absolute;
         width: 24px;
         height: 24px;
-        left: 16px;
-        top: 10px;
+        margin-left: 16px;
     }
 
 /* -- Hamburguesa -- */
 
-.hamburguesa{
-    position: absolute;
-    left: 283px;
-    top: 16px;    
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-    .hamburguesa div{
-        width: 18px;
-        height: 2px;
-        background-color: black;           
+    .hamburguesa{
+        margin-right: 19px;
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    div.linea2{
-        margin-top: 3px;
-        margin-bottom: 3px;        
-    }
+        .hamburguesa div{
+            width: 18px;
+            height: 2px;
+            background-color: black;
+        }
+        div.linea2{
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
 
 /* -- diseño de la X */
     /* .equis{
@@ -45,37 +43,38 @@
         background-color: #FFFFFF;
         display: flex;
         align-items: center;
-        justify-content: center;        
+        justify-content: center;
         z-index: 3;
     }
         .equis i{
             transform: scale(1.3,1.3);
-            visibility: hidden;            
+            visibility: hidden;
         } */
 
 /* -- Barra de navegación -- */
 
 .menu-ham{ /* Menú azul que se esconde */
     position: absolute;
-    width: 320px;
+    width: 100vw;
     height: 224px;
     background-color: #0000EC;
     color: #FFFFFF;
-    font-family: 'IBM Plex Mono', monospace;
-    margin-top: 44px;    
+    align-self: end;
+    top: 44px;
     visibility: hidden;
     z-index: 10;
 }
-    .menu-ham ul{        
+    .menu-ham ul{
         list-style: none; /*elimina las viñetas del a lista*/
-        margin-left: 16px;       
+        margin-left: 16px;
     }
     .menu-ham a{
         text-decoration: none;
         font-family: 'IBM Plex Mono', monospace;
         color: #FFFFFF;
+        font-size: 16px;
     }
-    .menu-ham ul li{        
+    .menu-ham ul li{
         height: 28px;
         margin-top: 24px;
         display: flex;
@@ -97,19 +96,18 @@
             text-decoration: line-through;
         }
 
-
 /* -- Caja chechkbox escondida -- */
 
-.check-ham{
+.check-ham{ /*Desaparece la caja para hacer check*/
     display: none;
 }
-.boxtop .check-ham:checked + .menu-ham{
+.boxtop .check-ham:checked + .menu-ham{ /*Da la funcionalidad para que al hacer check aparezca o desaparezca el menú*/
     visibility: visible;
-} 
+}
 
 /* ------ MEDIA QUERY ------ */
 
-@media (min-width: 480px){
+@media (min-width: 500px){
 
 /* ------ PRIMERA SECCIÓN: Menú ------  */
 
