@@ -21,6 +21,9 @@
         content: '\A';
         white-space: pre;
     }
+    .dot{
+        color: #060A24;
+    }
     .parr1{
         margin-left: 16px;
         font-size: 14px;
@@ -74,6 +77,9 @@
         }
         /* Con esta regla creo un texto antes del original
         luego lo hago visible el nuevo y escondo el original */
+        .dot{
+            color: #0000EC;
+        }
         .parr1::before{
             content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
             visibility: visible;            
