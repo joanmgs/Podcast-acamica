@@ -1,112 +1,106 @@
 /* ------ SEGUNDA SECCIÓN: holapunto ------ */
 
-.holapunto{            
-    width: 100%;
+/* Todo margin comentado en esta sección hace referencia a medidas exactas 
+respecto al modelo UI original*/
+
+.holapunto{
     height: 303px;
     background-color: #FFFFFF;
-    position: relative;
+    color: #060A24;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-    .hello{        
-        font-size: 36px;        
-        margin-top: 29px;
+    .hello, .parr1, .conmas{
         margin-left: 16px;
+        max-width: 288px;
+    }
+    .hello{
+        /* margin-top: 29px;
+        margin-left: 16px; */
+        font-size: 36px;
     }
     .world{
         text-decoration: line-through;
     }
-    /* Para poner un salto de línea después de world */
-    .world::after{
+    .world::after{ /* Para poner un salto de línea después de world */
         content: '\A';
         white-space: pre;
     }
-    .dot{
-        color: #060A24;
-    }
     .parr1{
-        margin-left: 16px;
-        font-size: 14px;
-        font-family: 'IBM Plex Mono', monospace;
+        /* margin-left: 16px;
         margin-top: 16px;
-        margin-bottom: 36px;        
+        margin-bottom: 36px; */
+        font-size: 14px;
         line-height: 22px;
-        width: 288px;
         height: 66px;
+        font-family: 'IBM Plex Mono', monospace;
     }
+    /* --- Botón Conocé Más --- */
     .conmas{
-        margin-left: 16px;
-        width: 288px;
+        /* margin-left: 16px; */
+        width: 90%;
         height: 48px;
         background: #00F3BB;
-        color: #060A24;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transition: 0.5s;
     }
         .conmas .conoce-mas{
             font-size: 16px;
             font-family: 'IBM Plex Mono', monospace;    
             font-weight: 500;
-            /* -- ¿Cómo aplicar el estilo medium? -- */
+            text-align: center;
         }        
         .conmas:hover{
             color: #FFFFFF;
-            background: linear-gradient(to left, #0000FE, #00F0B8);
-        }            
+            background: linear-gradient(225deg, #0000FE, #00F0B8);
+        }
 
 /* ------ MEDIA QUERY ------ */
 
-    @media (min-width: 480px){
+    @media (min-width: 780px){
         /* ------ SEGUNDA SECCIÓN: holapunto ------ */
-    .holapunto{        
-        height: 369px;                      
+    .holapunto{
+        height: 369px;
+        justify-content: flex-end;
     }
-        .hello{        
-            font-size: 64px;
-            margin-top: 120px;
+        .hello, .parr1, .conmas{
             margin-left: 200px;
+            max-width: 740px;
         }
-        .world{
-            text-decoration: line-through;
+        .hello{
+            /* margin-top: 120px;
+            margin-left: 200px; */
+            font-size: 64px;
         }
-        .world::after{
+        .world::after{ /* Con esta regla creo un texto antes del original
+            luego lo hago visible el nuevo y escondo el original */
             content: none;
             white-space: normal;
         }
-        /* Con esta regla creo un texto antes del original
-        luego lo hago visible el nuevo y escondo el original */
         .dot{
             color: #0000EC;
         }
-        .parr1::before{
-            content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
-            visibility: visible;            
-        }
         .parr1{
-            margin-left: 200px;
-            font-size: 16px;            
-            margin-top: 0px;      
-            margin-bottom: 0;  
+            /* margin-left: 200px; */
+            /* margin-top: 0px;
+            margin-bottom: 0;*/
+            font-size: 16px;
             line-height: 24px;
-            width: 628px;
             height: 48px;
             visibility: hidden;
         }
+        .parr1::before{
+            content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+            visibility: visible;
+        }
         /* --- Botón Conocé Más --- */
         .conmas{
-            margin-left: 200px;
+            margin-top: 56px;
+            margin-bottom: 5px;
             width: 226px;
             height: 56px;
-            margin-top: 56px;            
         }
             .conmas .conoce-mas{
-                font-size: 18px;                
-                /* -- ¿Cómo aplicar el estilo medium? -- */
-            }        
-            .conmas:hover{
-                background: linear-gradient(to left, #0000FE, #00F0B8);
-                color: #FFFFFF;
-            }        
+                font-size: 18px;
+            }
     }
