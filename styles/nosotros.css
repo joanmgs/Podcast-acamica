@@ -1,28 +1,30 @@
 /* ------ CUARTA SECCIÓN: De donde venimos ------ */
 
 .nosotros{
-    width: 100%;
     position: relative;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
     .celular{
-        position: relative;
+        /* width: 360px; */
+        height: 519px;
         transform: translate(0px, -70px);
         align-self: center;
-        height: 519px;
         z-index: 11;
     }
     .contenedor-nosotros{
         display: flex;
         flex-direction: column;
         transform: translate(0px, -50px);
-    }                
-        .donde{            
+        color: #060A24;
+    }
+        .contenedor-nosotros p{
+            max-width: 288px;
+        }
+        .donde{
             margin-left: 16px;
-            margin-bottom: 8px;   
-            margin-top: 27px;     
-            font-size: 36px;   
+            margin-bottom: 8px;
+            font-size: 36px;
             line-height: 42px;
         }
             .venimos::after{
@@ -30,23 +32,25 @@
                 white-space: pre;
             }
         .parr2{
-            margin-left: 16px;            
+            margin-left: 16px;
             font-size: 14px;
-            font-family: 'IBM Plex Mono', monospace;                      
+            font-family: 'IBM Plex Mono', monospace;
             line-height: 22px;
-
         }
 
-@media (min-width: 480px){
+@media (min-width: 780px){
     .nosotros{
-        height: 555.4px;        
+        height: 555.4px;
         flex-direction: row;
         justify-content: center;
-    }    
-        .celular{            
+    }
+        .celular{
             width: 457.6px;
             height: 660px;
             transform: translate(0px, -100px);
+        }
+        .contenedor-nosotros p{
+            max-width: 464px;
         }
         .contenedor-nosotros{
             margin-top: 0px;
@@ -56,20 +60,17 @@
             .donde{
                 margin-top: 20.4px;
                 margin-left: 0px;
-                margin-bottom: 24px;                
+                margin-bottom: 24px;
                 font-size: 48px;
-                left: 0px
+                left: 0px;
             }
                 .venimos::after{
                     content: none;
                     white-space: normal;
                 }
             .parr2{
-                
                 margin-left: 0px;
                 font-size: 16px;
                 line-height: 24px;
-                width: 464px;
-                height: 102px;
             }
 }

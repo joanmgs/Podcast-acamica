@@ -19,7 +19,6 @@
         margin-top: 24px;
     }
         .cont-img-p div{
-            width: 100vw;            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,7 +47,7 @@
             white-space: normal;
         }
 
-@media (min-width: 480px){
+@media (min-width: 780px){
     .topicos{
         height: 426px;
         display: flex;
