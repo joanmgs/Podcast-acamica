@@ -2,15 +2,15 @@
     height: auto;
     width: 100%;
     display: flex;
-    flex-direction: column;           
+    flex-direction: column;
     align-items: center;
 }
-    .algunos{        
+    .algunos{
         font-size: 36px;
         line-height: 42px;
-        margin-left: 16px;    
-        margin-top: 48px;   
-        width: 288px; 
+        margin-left: 16px;
+        margin-top: 48px;
+        width: 288px;
     }
     .cont-img-p{
         display: flex;

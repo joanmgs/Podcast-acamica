@@ -15,7 +15,8 @@
         }
     .img-invitadas{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
         .img-invitadas > img{
             width: 320px;
