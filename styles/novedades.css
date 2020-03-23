@@ -5,13 +5,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 100%);
         -webkit-clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 100%);
         -o-clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 100%);
         -ms-clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 100%);
 }
     .titulo-ep2{
-        margin-top: 213px;
         margin-bottom: 36px;
         color: #FFFFFF;
         font-size: 36px;
@@ -45,6 +45,7 @@
 @media (min-width: 780px){
     .novedades{
         height: 518px;
+        justify-content: unset;
         clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
             -webkit-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
             -o-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
@@ -52,6 +53,7 @@
     }
     .titulo-ep2{
         width: 100%;
+        margin-top: 213px;
         font-size: 48px;
     }
     .conmas2{
