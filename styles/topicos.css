@@ -47,7 +47,7 @@
             white-space: normal;
         }
 
-@media (min-width: 480px){
+@media (min-width: 780px){
     .topicos{
         height: 426px;
         display: flex;

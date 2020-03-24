@@ -41,7 +41,7 @@
             color: #FFFFFF;
         }
 
-@media (min-width: 480px){
+@media (min-width: 780px){
     .novedades{
         height: 518px;
         clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);

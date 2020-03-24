@@ -38,7 +38,7 @@
             line-height: 22px;
         }
 
-@media (min-width: 480px){
+@media (min-width: 780px){
     .nosotros{
         height: 555.4px;
         flex-direction: row;

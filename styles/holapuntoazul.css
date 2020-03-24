@@ -57,7 +57,7 @@ respecto al modelo UI original*/
 
 /* ------ MEDIA QUERY ------ */
 
-    @media (min-width: 480px){
+    @media (min-width: 780px){
         /* ------ SEGUNDA SECCIÓN: holapunto ------ */
     .holapunto{
         height: 369px;
