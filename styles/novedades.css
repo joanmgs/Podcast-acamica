@@ -4,8 +4,8 @@
     background-image: linear-gradient(225deg, #0000FF, #0000A3);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 100%);
         -webkit-clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 100%);
         -o-clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 100%);
@@ -17,8 +17,8 @@
         font-size: 36px;
         line-height: 42px;
         text-align: center;
-        width: 288px;
-        height: 126px;
+        /* width: 288px;
+        height: 126px; */
     }
     .conmas2{
         width: 288px;
@@ -35,6 +35,7 @@
             line-height: 22px;
             font-family: 'IBM Plex Mono', monospace;    
             font-weight: 500;
+            text-align: center;
         }        
         .conmas2:hover{
             background: linear-gradient(to left, #0000FE, #00F0B8);
@@ -44,14 +45,15 @@
 @media (min-width: 780px){
     .novedades{
         height: 518px;
-        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
-            -webkit-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
-            -o-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
-            -ms-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+        justify-content: unset;
+        clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
+            -o-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
+            -ms-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
     }
     .titulo-ep2{
         width: 100%;
-        height: auto;
+        margin-top: 213px;
         font-size: 48px;
     }
     .conmas2{

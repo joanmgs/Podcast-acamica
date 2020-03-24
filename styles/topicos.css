@@ -1,96 +1,90 @@
 .topicos{
-    height: auto;
     width: 100%;
     display: flex;
-    flex-direction: column;           
-    align-items: center;
+    flex-direction: column;
 }
-    .algunos{        
+    .algunos{
         font-size: 36px;
         line-height: 42px;
-        margin-left: 16px;    
-        margin-top: 48px;   
-        width: 288px; 
+        margin-top: 48px;
+        margin-left: 16px;
     }
-    .cont-img-p{
-        display: flex;
-        flex-direction: column;           
-        align-items: center;
-        margin-top: 24px;
-    }
-        .cont-img-p div{
+    /* .cont-img-p{
+        width: 288px;
+    } */
+        .cont-img-p figure{
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            margin-bottom: 52px;
+            align-items: center;
+            margin-bottom: 36px;
         }
-            .cont-img-p div:nth-child(1){
-                margin-bottom: 36px;
+            .cont-img-p figure:nth-child(1){
+                margin-top: 24px;
             }
-            .cont-img-p div:nth-child(4){
+            .cont-img-p figure:nth-child(4){
                 margin-bottom: 42px;
             }
-            .cont-img-p div p{
+            .cont-img-p figure img{
+                width: 104px;
+                height: 104px;
+                margin-bottom: 13px;
+            }
+            .cont-img-p figure p{
                 line-height: 30px;
                 font-size: 24px;   
                 font-weight: 600;
                 text-align: center;
             }
-        .cont-img-p img{
-            width: 104px;
-            height: 104px;
-            margin-bottom: 13px;
-        }
-        .cont-p-ultimo .salto::after{
-            content: none;
-            white-space: normal;
-        }
+                .cont-p-ultimo .salto::after{
+                    content: none;
+                    white-space: normal;
+                }
 
 @media (min-width: 780px){
     .topicos{
         height: 426px;
-        display: flex;
-        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
         .algunos{
             font-size: 48px;
-            margin-left: 200px;
-            margin-top: 64px;            
-            width: 586px;
             height: 62px;
+            margin-top: 0px;
+            margin-left: 13.9%;
         }
-            .salto::after{
+            .algunos .salto::after{
                 content: none;
                 white-space: normal;
             }
-        .cont-img-p{
-            width: 72.2vw;
-            flex-direction: row;
-            align-items: baseline;
-            align-self: center;
-            margin-top: 56px;
-        }
-            .cont-img-p img{
+            .cont-img-p{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 0px;
+            }
+            .topicos figure{
+                width: 260px;
+            }
+            .topicos figure img{
                 width: 104px;
                 height: 104px;
                 margin-bottom: 29px;
             }
-            .cont-img-p > p{            
+            .topicos figure p{            
                 margin-bottom: 0px;
                 font-size: 24px;   
                 font-weight: 600;
                 text-align: center;
             }
-            .cont-img-p .reemplazar .salto::after{
+            .topicos .reemplazar .salto::after{
                 content: '\A';
                 white-space: pre;
             }
-            .cont-img-p .cont-p-ultimo .salto::after{
+            .topicos .cont-p-ultimo .salto::after{
                 content: '\A';
                 white-space: pre;
             }
-            .cont-img-p .cont-p-primero, .cont-img-p .cont-p-ultimo{
+            .topicos .cont-p-primero, .cont-img-p .cont-p-ultimo{
                 margin-bottom: 0px;
             }        
 }
