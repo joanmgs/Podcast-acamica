@@ -24,18 +24,18 @@
         align-items: center;
         flex-direction: column;
     }
-        .hamburguesa div{
+        .hamburguesa span{
             width: 18px;
             height: 2px;
             background-color: black;
             transition: 0.2s;
         }
-        div.linea2{
+        span.linea2{
             margin-top: 3px;
             margin-bottom: 3px;
         }
-        div.hamburguesa:hover .linea1{ transition: 0.2s; transform: translateY(-100%);}
-        div.hamburguesa:hover .linea3{ transition: 0.2s; transform: translateY(100%);}
+        span.hamburguesa:hover .linea1{ transition: 0.2s; transform: translateY(-100%);}
+        span.hamburguesa:hover .linea3{ transition: 0.2s; transform: translateY(100%);}
         
 
 /* -- Barra de navegación -- */
