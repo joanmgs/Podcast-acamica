@@ -53,6 +53,7 @@ respecto al modelo UI original*/
         .conmas:hover{
             color: #FFFFFF;
             background: linear-gradient(225deg, #0000FE, #00F0B8);
+            cursor: pointer;
         }
 
 /* ------ MEDIA QUERY ------ */
