@@ -35,6 +35,7 @@
             white-space: normal;
         }
     .img-invitadas{
+        justify-items: center; /*centra dentro de la grilla*/
         display: grid;
         grid-template-columns: repeat(3, 33.3%);
         grid-template-rows: repeat(2,auto);
