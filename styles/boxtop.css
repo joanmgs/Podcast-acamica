@@ -19,6 +19,7 @@
         margin-right: 19px;
         z-index: 4;
         display: flex;
+        height: 20px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -27,29 +28,15 @@
             width: 18px;
             height: 2px;
             background-color: black;
+            transition: 0.2s;
         }
         div.linea2{
             margin-top: 3px;
             margin-bottom: 3px;
         }
-
-/* -- diseño de la X */
-    /* .equis{
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        width: 14px;
-        height: 14px;
-        background-color: #FFFFFF;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 3;
-    }
-        .equis i{
-            transform: scale(1.3,1.3);
-            visibility: hidden;
-        } */
+        div.hamburguesa:hover .linea1{ transition: 0.2s; transform: translateY(-100%);}
+        div.hamburguesa:hover .linea3{ transition: 0.2s; transform: translateY(100%);}
+        
 
 /* -- Barra de navegación -- */
 
@@ -81,15 +68,13 @@
         align-items: center;
         justify-content: left;
     }
-    .menu-ham ul li a{
-        transition: 0.4s;
-    }
         .menu-ham ul li:nth-child(1){
             margin-top: 16px;
         }
         .menu-ham ul li a:hover{
             color: #00F3BB;
             text-decoration: line-through;
+            transition: 0.4s;
         }
         .menu-ham ul li a:active{
             color: #8F060A24;
@@ -101,8 +86,23 @@
 .check-ham{ /*Desaparece la caja para hacer check*/
     display: none;
 }
-.boxtop .check-ham:checked + .menu-ham{ /*Da la funcionalidad para que al hacer check aparezca o desaparezca el menú*/
+.boxtop .check-ham:checked ~ .menu-ham{ /*Da la funcionalidad para que al hacer check aparezca o desaparezca el menú*/
     visibility: visible;
+}
+
+/* ------ Conversión en X ------ */
+
+.boxtop .check-ham:checked + .h-1 .hamburguesa .linea1{
+    transition: 0.3s;
+    transform: translate(0px, 5px) rotate(45deg);
+}
+.boxtop .check-ham:checked + .h-1 .hamburguesa .linea2{
+    transition: 0.3s;
+    opacity: 0;
+}
+.boxtop .check-ham:checked + .h-1 .hamburguesa .linea3{
+    transition: 0.3s;
+    transform: translate(0px, -5px) rotate(-45deg);
 }
 
 /* ------ MEDIA QUERY ------ */
