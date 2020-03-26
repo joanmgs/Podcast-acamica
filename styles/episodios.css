@@ -11,6 +11,10 @@
         -o-clip-path: polygon(0% 3.5%, 100% 0%, 100% 97.5%, 0% 100%);
         -ms-clip-path: polygon(0% 3.5%, 100% 0%, 100% 97.5%, 0% 100%);
 }
+    .sec-ep .mobile iframe, .sec-ep .screen iframe{
+        border: 0;
+        background-color: transparent;
+    }
     .titulo-ep{        
         color: #FFFFFF;
         font-size: 36px;
