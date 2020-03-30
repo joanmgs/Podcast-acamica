@@ -1,53 +1,54 @@
 /* ------ SEGUNDA SECCIÓN: holapunto ------ */
 
-/* Todo margin comentado en esta sección hace referencia a medidas exactas 
-respecto al modelo UI original*/
-
 .holapunto{
     height: 303px;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     color: #060A24;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-    .hello, .parr1, .conmas{
+    .hello, .parr1{
         margin-left: 16px;
         max-width: 288px;
     }
     .hello{
-        /* margin-top: 29px;
-        margin-left: 16px; */
         font-size: 36px;
+        line-height: 42px;
     }
     .world{
         text-decoration: line-through;
     }
-    .world::after{ /* Para poner un salto de línea después de world */
+    .salto::after{ /* Para poner un salto de línea después de world - esta clase también se utilizará más adelante pero solo llamandola desde el HTML*/
         content: '\A';
         white-space: pre;
     }
     .parr1{
-        /* margin-left: 16px;
-        margin-top: 16px;
-        margin-bottom: 36px; */
-        font-size: 14px;
-        line-height: 22px;
         height: 66px;
         font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        line-height: 22px;
     }
+
     /* --- Botón Conocé Más --- */
     
+    .margin-left-button-top{
+        margin-left: 16px;
+    }
+
     .conmas{
-        width: 90%;
+        max-width: 288px;
         height: 48px;
         background: #00F3BB;
-        font-size: 16px;
-        font-family: 'IBM Plex Mono', monospace;    
-        font-weight: 500;
+        color: #060A24;
         text-align: center;
+        line-height: 22px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
         transition: 0.5s;
-    }        
+    }
         .conmas:hover{
             color: #FFFFFF;
             background: linear-gradient(225deg, #0000FE, #00F0B8);
@@ -69,6 +70,7 @@ respecto al modelo UI original*/
         .hello{
             /* margin-top: 120px;
             margin-left: 200px; */
+            line-height: normal;
             font-size: 64px;
         }
         .world::after{ /* Con esta regla creo un texto antes del original

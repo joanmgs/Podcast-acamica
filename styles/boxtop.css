@@ -1,8 +1,8 @@
 /* ------ PRIMERA SECCIÓN: Menú ------  */
 
 .boxtop{
-    background-color: #FFFFFF;
     height: 44px;
+    background: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,26 +17,24 @@
 
     .hamburguesa{
         margin-right: 19px;
-        z-index: 4;
         display: flex;
-        height: 20px;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
         .hamburguesa span{
             width: 18px;
             height: 2px;
-            background-color: black;
-            transition: 0.2s;
+            background: #000000;
+            transition: 0.2s; /*transición de tiempo en que se toma la contracción de la hamburguesa*/
         }
         span.linea2{
             margin-top: 3px;
             margin-bottom: 3px;
         }
+        /* Estilo para que la hamburguesa se expanda */
         span.hamburguesa:hover .linea1{ transition: 0.2s; transform: translateY(-100%);}
         span.hamburguesa:hover .linea3{ transition: 0.2s; transform: translateY(100%);}
-        
 
 /* -- Barra de navegación -- */
 
@@ -44,12 +42,12 @@
     position: absolute;
     width: 100%;
     height: 224px;
-    background-color: #0000EC;
+    background: #0000EC;
     color: #FFFFFF;
-    align-self: end;
-    top: 44px;
+    top: 20px;
     visibility: hidden;
-    z-index: 10;
+    transition: 0.25s ease-in;
+    filter: opacity(50%);
 }
     .menu-ham ul{
         list-style: none; /*elimina las viñetas del a lista*/
@@ -66,7 +64,6 @@
         margin-top: 24px;
         display: flex;
         align-items: center;
-        justify-content: left;
     }
         .menu-ham ul li:nth-child(1){
             margin-top: 16px;
@@ -78,16 +75,18 @@
         }
         .menu-ham ul li a:active{
             color: #8F060A24;
-            text-decoration: line-through;
         }
 
-/* -- Caja chechkbox escondida -- */
+/* -- Animaciones para el menú -- */
 
 .check-ham{ /*Desaparece la caja para hacer check*/
     display: none;
 }
 .boxtop .check-ham:checked ~ .menu-ham{ /*Da la funcionalidad para que al hacer check aparezca o desaparezca el menú*/
     visibility: visible;
+    filter: opacity(100%);
+    transition: 0.3s;
+    top: 44px;
 }
 
 /* ------ Conversión en X ------ */
@@ -113,13 +112,11 @@
 
 .boxtop{
     height: 80px;
-    z-index: 1;
 }
     .iconbd{
         width: 36px;
         height: 36px;
         margin-left: 100px;
-        z-index: 9;
     }
 
 /* -- Hamburguesa -- */
@@ -131,18 +128,21 @@
 /* -- Barra de navegación -- */
 
 .menu-ham{ /* Menú azul que se esconde */
+    position: relative;
+    width: auto;
     height: 80px;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     color: #060A24;
     top: 0px;
     visibility: visible;
     display: flex;
     align-items: center;
-    z-index: 8;
+    transition: none;
+    filter: none;
 }
     .menu-ham ul{
         margin-left: 0px;
-        width: 100%;
+        margin-right: 100px;
         display: flex;
         justify-content: flex-end;
     }
@@ -157,6 +157,6 @@
             margin-top: 0px;
         }
         .menu-ham ul li:nth-child(4){
-            margin-right: 100px;
+            margin-right: 0px;
         }
 }
