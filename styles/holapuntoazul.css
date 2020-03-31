@@ -32,7 +32,7 @@
 
     /* --- Botón Conocé Más --- */
     
-    .margin-left-button-top{
+    .margin-button-top{
         margin-left: 16px;
     }
     .button-blue{
@@ -94,9 +94,13 @@
             visibility: visible;
         }
         /* --- Botón Conocé Más --- */
-        .button-blue{
+
+        .margin-button-top{
+            margin-left: 200px;
             margin-top: 56px;
             margin-bottom: 5px;
+        }
+        .button-blue{
             width: 226px;
             height: 56px;
         }
