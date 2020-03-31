@@ -40,11 +40,11 @@
         height: 48px;
         background: #00F3BB;
         color: #060A24;
+        font-family: 'IBM Plex Mono', monospace;
         text-align: center;
         line-height: 22px;
-        font-family: 'IBM Plex Mono', monospace;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 500;
         line-height: 22px;
         transition: 0.5s;
     }
