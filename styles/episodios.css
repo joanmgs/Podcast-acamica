@@ -12,8 +12,8 @@
         -ms-clip-path: polygon(0% 3.5%, 100% 0%, 100% 97.5%, 0% 100%);
 }
     .sec-ep .mobile iframe, .sec-ep .screen iframe{
-        border: 0;
-        background-color: transparent;
+        border: 0; /* en vez de frameborder */
+        background-color: transparent; /* en vez de allowtransparency */
     }
     .titulo-ep{        
         color: #FFFFFF;

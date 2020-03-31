@@ -37,8 +37,8 @@
     .img-invitadas{
         justify-items: center; /*centra dentro de la grilla*/
         display: grid;
-        grid-template-columns: repeat(3, 33.3%);
-        grid-template-rows: repeat(2,auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
         .img-invitadas > img{
             width: 100%;
