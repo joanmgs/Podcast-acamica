@@ -35,7 +35,7 @@
     .margin-left-button-top{
         margin-left: 16px;
     }
-    .conmas{
+    .button-blue{
         max-width: 288px;
         height: 48px;
         background: #00F3BB;
@@ -48,7 +48,7 @@
         line-height: 22px;
         transition: 0.5s;
     }
-        .conmas:hover{
+        .button-blue:hover{
             color: #FFFFFF;
             background: linear-gradient(225deg, #0000FE, #00F0B8);
             cursor: pointer;
@@ -62,7 +62,7 @@
         height: 369px;
         justify-content: flex-end;
     }
-        .hello, .parr1, .conmas{
+        .hello, .parr1, .button-blue{
             margin-left: 200px;
             max-width: 740px;
         }
@@ -94,13 +94,13 @@
             visibility: visible;
         }
         /* --- Botón Conocé Más --- */
-        .conmas{
+        .button-blue{
             margin-top: 56px;
             margin-bottom: 5px;
             width: 226px;
             height: 56px;
         }
-            .conmas .conoce-mas{
+            .button-blue .conoce-mas{
                 font-size: 18px;
             }
     }
