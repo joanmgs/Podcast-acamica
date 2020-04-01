@@ -5,42 +5,35 @@
     .inv{
         font-size: 36px;
         line-height: 42px;
-        margin-top: 54px;
-        margin-bottom: 14px;
         margin-left: 16px;
+        margin-bottom: 14px;
     }
-        .salto::after{
-            content: '\A';
-            white-space: pre;
-        }
     .img-invitadas{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-        .img-invitadas > img{
-            width: 320px;
+        .img-invitadas img{
             height: 243px;
         }
 
 @media (min-width: 780px){    
     .inv{
         font-size: 48px;
-        margin-bottom: 36px;
         margin-left: 200px;
+        margin-bottom: 36px;
     }    
         .salto::after{
             content: none;
             white-space: normal;
         }
     .img-invitadas{
-        justify-items: center; /*centra dentro de la grilla*/
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-        .img-invitadas > img{
+        .img-invitadas img{
             width: 100%;
             height: auto;
         }

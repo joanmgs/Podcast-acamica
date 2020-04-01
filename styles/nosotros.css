@@ -1,16 +1,13 @@
 /* ------ CUARTA SECCIÓN: De donde venimos ------ */
 
 .nosotros{
-    position: relative;
     display: flex;
     flex-direction: column;
 }
     .celular{
-        /* width: 360px; */
         height: 519px;
         transform: translate(0px, -70px);
         align-self: center;
-        z-index: 11;
     }
     .contenedor-nosotros{
         display: flex;
@@ -18,24 +15,18 @@
         transform: translate(0px, -50px);
         color: #060A24;
     }
-        .contenedor-nosotros p{
-            max-width: 288px;
-        }
         .donde{
             margin-left: 16px;
             margin-bottom: 8px;
             font-size: 36px;
             line-height: 42px;
         }
-            .venimos::after{
-                content: '\A';
-                white-space: pre;
-            }
-        .parr2{
+
+        /* --- Texto utilizado en el diseño --- */
+        
+        .text-area-margin-bottom{
+            max-width: 288px;
             margin-left: 16px;
-            font-size: 14px;
-            font-family: 'IBM Plex Mono', monospace;
-            line-height: 22px;
         }
 
 @media (min-width: 780px){
@@ -49,11 +40,7 @@
             height: 660px;
             transform: translate(0px, -100px);
         }
-        .contenedor-nosotros p{
-            max-width: 464px;
-        }
         .contenedor-nosotros{
-            margin-top: 0px;
             margin-left: 62.4px;
             transform: translate(0px, 0px);
         }
@@ -62,15 +49,15 @@
                 margin-left: 0px;
                 margin-bottom: 24px;
                 font-size: 48px;
-                left: 0px;
             }
-                .venimos::after{
-                    content: none;
-                    white-space: normal;
-                }
-            .parr2{
+
+            /* --- Texto utilizado en el diseño --- */
+
+            .text-area-margin-bottom{
+                max-width: 464px;
                 margin-left: 0px;
-                font-size: 16px;
-                line-height: 24px;
+            }
+            .text-visible{
+                visibility: visible;
             }
 }
