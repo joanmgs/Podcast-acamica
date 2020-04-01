@@ -3,15 +3,14 @@
     flex-direction: column;
 }
     .inv{
-        font-size: 36px;
-        line-height: 42px;
         margin-left: 16px;
         margin-bottom: 14px;
+        font-size: 36px;
+        line-height: 42px;
     }
     .img-invitadas{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         justify-content: center;
     }
         .img-invitadas img{
@@ -20,9 +19,9 @@
 
 @media (min-width: 780px){    
     .inv{
-        font-size: 48px;
         margin-left: 200px;
         margin-bottom: 36px;
+        font-size: 48px;
     }    
         .salto::after{
             content: none;
