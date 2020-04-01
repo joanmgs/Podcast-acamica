@@ -1,2 +1,2 @@
 # Podcast-acamica
-Practicando en HTML y CSS, a través de la replica de un Podcast
+Practicando en HTML y CSS, a través de la replica de un Podcast.
