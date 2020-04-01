@@ -1,5 +1,4 @@
 .novedades{
-    width: 100%;
     height: 341px;
     background-image: linear-gradient(225deg, #0000FF, #0000A3);
     display: flex;
@@ -17,10 +16,7 @@
         font-size: 36px;
         line-height: 42px;
         text-align: center;
-        /* width: 288px;
-        height: 126px; */
     }
-
     .margin-button-bottom{
         margin-left: 0px;
         width: 288px;
@@ -29,23 +25,14 @@
 @media (min-width: 780px){
     .novedades{
         height: 518px;
-        justify-content: unset;
+        justify-content: normal;
         clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
             -webkit-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
             -o-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
             -ms-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
     }
     .titulo-ep2{
-        width: 100%;
         margin-top: 213px;
         font-size: 48px;
     }
-    /* .conmas2{
-        width: 345px;
-        height: 56px;
-    }
-        .conmas2 .conoce-mas2{
-            font-size: 18px;
-            line-height: 24px;
-        } */
 }

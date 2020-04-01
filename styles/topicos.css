@@ -8,33 +8,30 @@
         font-size: 36px;
         line-height: 42px;
     }
-    /* .cont-img-p{
-        width: 288px;
-    } */
         .cont-img-p figure{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 36px;
+            margin-bottom: 52px;
         }
             .cont-img-p figure:nth-child(1){
+                margin-bottom: 36px;
                 margin-top: 24px;
             }
             .cont-img-p figure:nth-child(4){
                 margin-bottom: 42px;
             }
-            .cont-img-p figure img{
-                width: 104px;
-                height: 104px;
-                margin-bottom: 13px;
-            }
-            .cont-img-p figure p{
-                line-height: 30px;
-                font-size: 24px;   
-                font-weight: 600;
-                text-align: center;
-            }
-                .cont-p-ultimo .salto::after{
+                .cont-img-p figure img{
+                    width: 104px;
+                    height: 104px;
+                    margin-bottom: 13px;
+                }
+                .cont-img-p figure p{
+                    font-size: 24px;   
+                    font-weight: 600;
+                    text-align: center;
+                }
+                .cont-p-ultimo .salto::after{ /*Evita el salto provocado por .salto*/
                     content: none;
                     white-space: normal;
                 }
@@ -63,17 +60,20 @@
             .topicos figure{
                 width: 260px;
             }
-            .topicos figure img{
-                width: 104px;
-                height: 104px;
-                margin-bottom: 29px;
-            }
-            .topicos figure p{            
+            .cont-img-p figure:nth-child(1){
                 margin-bottom: 0px;
-                font-size: 24px;   
-                font-weight: 600;
-                text-align: center;
+                margin-top: 0px;
             }
+                .topicos figure img{
+                    width: 104px;
+                    height: 104px;
+                    margin-bottom: 29px;
+                }
+                .topicos figure p{            
+                    font-size: 24px;   
+                    font-weight: 600;
+                    text-align: center;
+                }
             .topicos .reemplazar .salto::after{
                 content: '\A';
                 white-space: pre;

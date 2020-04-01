@@ -24,7 +24,7 @@
             transition: 0.5s;
         }
         .pie .iconos a:hover{
-            color: blue;
+            color: #00F3BB;
         }
         .pie .iconos a:link{
             text-decoration: none;
